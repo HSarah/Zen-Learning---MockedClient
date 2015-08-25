@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="font/font.css" type="text/css" charset="utf-8" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/grid.css" />
+	<link rel="stylesheet" type="text/css" href="css/boxes.css" />
+	<link rel="stylesheet" type="text/css" href="css/button.css" />
+	<link rel="stylesheet" type="text/css" href="css/chapitres.css" />
+	<link rel="stylesheet" type="text/css" href="css/navbar.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+
+	<title>Chaines de Markov</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="navbar-brand">
+				
+			</div>
+			<ul class="nav-list">
+					<li class="nav-item selectable"><a href="index.html">Accueil</a></li>
+					<li class="nav-item selectable"><a href="news.html">News</a></li>
+					<li class="nav-item selectable selected"><a href="modules.html">Cours</a></li>
+					<li class="nav-item selectable"><a href="Telechargement.html">Téléchargement</a></li>
+					<li class="nav-item selectable"><a href="Inscription.html">Inscription</a></li>
+					<li class="nav-item selectable"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1 class="page-title">
+		Chaines de Markov
+	</h1>
+	<div class="wrapper">
+		<div class="row">
+			<div class="col-12">
+				<article class="chapter-box box box-black">
+					<div class="box-header">
+						<a href="Cours-Analyse.html" class="nutton-left small blue pull-left">Sommaire</a>
+						<span class="update-date">Mis à jour le 07 décembre 2014</span>
+					</div>
+					<h2 class="box-title">Chapitre1 : Présentation</h2>
+					<p><b>Definition</b> <br/> <br/>
+					Soit (Xn)n¸0 une suite de variables aleatoires a valeurs dans un ensemble S, fini ou
+denombrable. Dans la suite, pour simplifier les notations, on remplacera souvent S par la numerotation
+de ses elements. Soit un ensemble (pi,j)(i2S,j2S) de probabilites de transition. On dit que la suite (Xn)
+est une chaıne de Markov, si, pour tout n > 1 et toute suite (i0, . . . , in−1, in) d’elements de S, on a la
+relation suivante entre probabilites conditionnelles :<br/> <br/>
+P(Xn = in|X0 = i0, . . . ,Xn−1 = in−1) = P(Xn = in|Xn−1 = in−1) = pin−1,in. (5.1)<br/> <br/>
+Autrement dit, dans l’evolution au cours du temps, l’etat du processus a l’instant n ne depend que
+de celui a l’instant n − 1 precedent, mais non de ses etats anterieurs. Le processus est sans memoire ou
+non hereditaire.<br/> <br/>
+La probabilite pi,j est appelee la probabilite de passage de l’etat i a l’etat j, en une etape, ou en une
+operation, ou encore, en une transition.<br/> <br/>
+Exemple 5.1.2 (Modele de diffusion) On dispose de deux boıtes contenant chacune r boules, et il
+y a au total 2r boules : r noires et r blanches. L’etat du syteme est determine par le nombre de boules
+blanches dans la premiere boıte (S = {0, 1, ..., r}). Une transition consiste a tirer une boule de la premiere
+boıte et une de la deuxieme et a les echanger.<br/> <br/>
+– pi,j = 0 si |j − i| ¸ 2
+– pi,i−1 = i2
+r2 si i ¸ 1
+– pi,i+1 = (r−i)2
+r2 (i = r)
+– pi,i = 2i(r−i)
+r2 .<br/> <br/>
+<b>Exemple</b> <br/> <br/> (Marche au hasard dans Zk (S = Zk)) A chaque etape, on se deplace d’une unite
+dans une direction : (x1, x2, ..., xk) a 2k voisins de la forme (x1, ..., xi ± 1, ..., xk). Chaque probabilite de
+transition vaut 1
+2k .<br/> <br/>
+Si k · 2, on revient toujours au point de depart. Si k ¸ 3, on revient au point de depart avec une
+probabilite strictement inferieure a 1.<br/> <br/>
+Definition <br/> <br/>(Distribution) On appelle distribution a l’instant n la famille ¦n : (¦ni
+)i 2 S telle
+que 8i 2 S,¦ni
+= P(Xn = i).
+Remarque 5.1.5 L’evolution d’une chaıne de Markov est completement determinee par les pi,j et par
+la distribution initiale ¦0.<br/> <br/>
+						</p>
+					<div class="box-footer">
+						<a href="chapitres-Probab-3-2.html" class="nutton-right small blue pull-right">Next</a>
+						
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-8 vCenter">
+					<ul class="footer-nav">
+						<li><a href="">ACCUEIL</a></li>
+						<li><a href="">NEWS</a></li>
+						<li><a href="">COURS</a></li>
+						<li><a href="">EXERCICES</a></li>
+						<li><a href="">TELECHARGEMENT</a></li>
+						<li><a href="">INSCRIPTION</a></li>
+						<li><a href="">CONTACT</a></li>
+					</ul>
+					<p> 
+						© 2014-2015 Habchi Sarah and Benchikh Allaoua. All Rights Reserved.	
+					</p>
+				</div>
+				<div class="col-4 vCenter">
+					<a class="footer-img" href="#"></a>
+				</div>
+			</div>
+		</div>		
+	</footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+
+@font-face {
+    font-family: 'roboto light';
+    src: url('Fonts/roboto-light.ttf') format('truetype') ;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('Fonts/roboto-regular.ttf') format('truetype') ;
+}
+
+@font-face {
+    font-family: 'roboto thin';
+    src: url('Fonts/roboto-thin.ttf') format('truetype') ;
+}
+body {
+	min-width: 1000px ;
+	margin: 0px ;
+}
+
+.modules {
+	background-color: #2f516f ;
+}
+
+.wrapper {
+	width: 960px ;
+	box-sizing : content-box ;
+	display: table;
+	margin: 0 auto ;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+	float: left;
+	margin: 0px 10px ;
+	box-sizing : border-box ;
+}
+
+.col-1 {
+	width: 60px ;
+}
+
+.col-2 {
+	width: 140px ; /*140px = 60*2 + 20px*/
+}
+
+.col-3 {
+	width: 220px ; /*220px = 60*3 + 20*2  */
+}
+
+.col-4 {
+	width: 300px ;
+}
+
+.col-5 {
+	width: 380px ;
+}
+
+.col-6 {
+	width: 460px ;
+}
+
+.col-7 {
+	width: 540px ;
+}
+
+.col-8 {
+	width: 620px ;
+}
+
+.col-9 {
+	width: 700px ;
+}
+
+.col-10 {
+	width: 780px ;
+}
+
+.col-11 {
+	width: 860px ;
+}
+
+.col-12 {
+	width: 940px ;
+}
+
+.row {
+	/* this class is used to create a new row by clearing the float */
+	clear: both;
+}
+
+.row-centered {
+	/* if you want to center the columns inside a row use this class*/
+	text-align: center;
+}
+
+.row-centered > .col-centered {
+	display: inline-block;
+	clear: both;
+	float: none ;
+}

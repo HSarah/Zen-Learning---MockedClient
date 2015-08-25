@@ -1,0 +1,208 @@
+.button {
+	color: black ;
+	display: inline-block;	
+	margin: 2px ;
+	font-family: 'Roboto light' ;
+	font-weight: 300 ;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+}
+
+a.button:visited {
+	
+}
+
+.button.xsmall, .nutton-left.xsmall, .nutton-right.xsmall {
+	padding: 2px 10px ;
+	font-size: 12pt ;
+}
+
+.button.small, .nutton-left.small , .nutton-right.small{
+	padding: 3px 15px ;
+	font-size: 14pt ;
+}
+
+.button.medium, .nutton-left.medium, .nutton-right.medium {
+	padding: 4px 20px ;
+	font-size: 16pt ;
+}
+
+.button.large, .nutton-left.large , .nutton-right.large{
+	padding: 5px 25px ;
+	font-size: 18pt ;
+}
+
+.button.xlarge, .nutton-left.xlarge, .nutton-right.xlarge {
+	padding: 6px 30px ;
+	font-size: 20pt ;
+}
+
+.button.blue {
+	color: white ;
+	background-color: #0C82E9;
+	-webkit-transition: background-color 0.3s ease-out;
+	-o-transition: background-color 0.3s ease-out ;
+	-moz-transition: background-color 0.3s ease-out ;
+	transition: background-color 0.3s ease-out ;
+}
+
+.button.blue:hover {
+	background-color: #074C88 ;
+}
+
+.button.magenta {
+	color: white ;
+	background-color: #691194;
+	-webkit-transition: background-color 0.3s ease-out;
+	-o-transition: background-color 0.3s ease-out ;
+	-moz-transition: background-color 0.3s ease-out ;
+	transition: background-color 0.3s ease-out ;
+}
+
+.button.magenta:hover {
+	background-color: #510874 ;
+}
+
+.button.white {
+	color: #0a6cc2 ;
+	border: solid 1px ;
+	border-color: #0a6cc2 ;
+	background-color: white;
+	-webkit-transition: background-color 0.3s ease-out;
+	-o-transition: background-color 0.3s ease-out ;
+	-moz-transition: background-color 0.3s ease-out ;
+	transition: background-color 0.3s ease-out ;
+}
+
+.button.white:hover {
+	background-color: #efefef;
+}
+
+.button.green {
+	color: white ;
+	background-color: #12C700;
+	-webkit-transition: background-color 0.3s ease-out;
+	-o-transition: background-color 0.3s ease-out ;
+	-moz-transition: background-color 0.3s ease-out ;
+	transition: background-color 0.3s ease-out ;
+}
+
+.button.green:hover {
+	background-color: #259B24;
+}
+
+.button.red {
+	color: white ;
+	background-color: #DD191D;
+	-webkit-transition: background-color 0.3s ease-out;
+	-o-transition: background-color 0.3s ease-out ;
+	-moz-transition: background-color 0.3s ease-out ;
+	transition: background-color 0.3s ease-out ;
+}
+
+.button.red:hover {
+	background-color: #B0120A;
+}
+
+.nutton-left, .nutton-right {
+	display: inline-block;
+	color: black ;
+	display: inline-block;	
+	margin: 2px ;
+	font-family: 'Roboto light' ;
+	font-weight: 300 ;
+	text-decoration: none;
+	color: #0a6cc2 ;
+	position: relative;
+	z-index: 1 ;
+
+	-webkit-transition: color 0.6s;
+	-o-transition: color 0.6s;
+	transition: color 0.6s;
+}
+
+.nutton-left:hover, .nutton-right:hover {
+	color: white;
+}
+
+.nutton-left::before, .nutton-right::after {
+	position: absolute;
+	z-index: -1 ;
+	content: '';
+	height: 100% ;
+	
+	background-color: #0C82E9 ;
+	opacity: 0 ;
+
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.nutton-left::before {
+	width: 0% ;
+	left: 0 ;
+	top: 0 ;
+}
+
+.nutton-right::after {
+	width: 0% ;
+	left: 100% ;
+	top: 0 ;
+}
+
+.nutton-left:hover::before {
+	width: 100% ;
+	opacity: 1 ;
+}
+
+.nutton-right:hover::after {
+	left: 1% ;
+	width: 100%;
+	opacity: 1 ;
+}
+
+
+.selectable {
+	color: #475057;
+	position: relative;
+	-webkit-transition: color 1s;
+	-o-transition: color 1s;
+	transition: color 1s;
+	z-index: 1 ;
+}
+
+.selectable::after {
+	position: absolute;
+	z-index: -1 ;
+	content: '';
+	left: 25% ;
+	top: 0% ;
+	height: 100% ;
+	width: 50% ;
+	background-color: #0C82E9;
+	opacity: 0 ;
+
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.selectable:hover, .selectable:focus {
+	color: white ;
+}
+
+.selectable:hover::after, .selectable:focus::after {
+	width: 100% ;
+	opacity: 1 ;
+	left: 0% ;
+}
+
+.selected.selectable::after {
+	width: 100% ;
+	opacity: 1 ;
+	left: 0% ;
+}
+
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="font/font.css" type="text/css" charset="utf-8" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/grid.css" />
+	<link rel="stylesheet" type="text/css" href="css/boxes.css" />
+	<link rel="stylesheet" type="text/css" href="css/button.css" />
+	<link rel="stylesheet" type="text/css" href="css/chapitres.css" />
+	<link rel="stylesheet" type="text/css" href="css/navbar.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+
+	<title>Chaines de Markov</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="navbar-brand">
+				
+			</div>
+			<ul class="nav-list">
+					<li class="nav-item selectable"><a href="index.html">Accueil</a></li>
+					<li class="nav-item selectable"><a href="news.html">News</a></li>
+					<li class="nav-item selectable selected"><a href="modules.html">Cours</a></li>
+					<li class="nav-item selectable"><a href="Telechargement.html">Téléchargement</a></li>
+					<li class="nav-item selectable"><a href="Inscription.html">Inscription</a></li>
+					<li class="nav-item selectable"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1 class="page-title">
+		Chaines de Markov
+	</h1>
+	<div class="wrapper">
+		<div class="row">
+			<div class="col-12">
+				<article class="chapter-box box box-black">
+					<div class="box-header">
+						<a href="Cours-Analyse.html" class="nutton-left small blue pull-left">Sommaire</a>
+						<span class="update-date">Mis à jour le 07 décembre 2014</span>
+					</div>
+					<h2 class="box-title">Chapitre2 : Persistance</h2>
+					<p>
+					Définition <br/> <br/>
+					Un état i est dit persistant si, partant de l’etat i, on retourne a l’etat i avec une
+probabilite 1. Sinon i est dit transitoire.<br/> <br/>
+Pour un evenement A, on pose pi(A) = P(A|X0 = i). La probabilite de se trouver un jour dans l’etat
+j sachant que X0 = i est pi([+1
+n=1Xn = j), que l’on note fi,j . Soit f(n)
+i,j la probabilite de passer pour la
+premiere fois en j a l’instant n sachant que X0 = i : f(n)
+i,j = pi(X1 6= j,X2 6= j, ...,Xn−1 6= j,Xn = j).
+On a alors fi,j =
+P+1
+n=1 f(n)
+i,j .<br/> <br/> Par definition,
+i transitoire , fi,i = 1
+i persistant , fi,i = 1<br/> <br/>
+Proposition 5.3.2 pi(Xn = i pour une infinite de valeur de n) =
+½
+1 si i est persistant
+0 sinon<br/> <br/>
+En effet, pi(|{n ¸ 1;Xn = i}| ¸ k) = fk
+i,i =
+½
+1 si i est persistant<br/> <br/>
+−!k!+1 0 si i transitoire<br/> <br/>
+Remarque 5.3.3 pi(Xn = j pour une infinite de valeur de n) =
+½
+0 si j est transitoire
+fi,j si j est persistant<br/> <br/>
+Theoreme 2 On note p(n)
+i,j la probabilite d’etre dans l’etat j a l’instant n en partant de l’etat i. On a le
+theoreme suivant :<br/> <br/>
+i est transitoire ,
+X+1
+n=1
+p(n)
+i,i = +1<br/> <br/>
+Demonstration<br/> <br/>
+On suppose que
+P+1
+n=1 p(n)
+i,i = +1. D’apres le lemme de Borel-Cantelli (on ne l’a pas vu en cours, mais
+si ¸ca vous interesse, google pourra vous en dire plus), pi(Xn = i pour une infinite de valeurs de n) = 0.
+Donc i est transitoire.<br/> <br/>
+Reciproquement, soit i transitoire (donc fi,i = 1). On va montrer que
+					
+					</p>
+					<div class="box-footer">
+						<a href="chapitres-Probab-3-3.html" class="nutton-right small blue pull-right">Next</a>
+						<a href="chapitres-Probab-3-1.html" class="nutton-left small blue pull-left">Previous</a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-8 vCenter">
+					<ul class="footer-nav">
+						<li><a href="">ACCUEIL</a></li>
+						<li><a href="">NEWS</a></li>
+						<li><a href="">COURS</a></li>
+						<li><a href="">EXERCICES</a></li>
+						<li><a href="">TELECHARGEMENT</a></li>
+						<li><a href="">INSCRIPTION</a></li>
+						<li><a href="">CONTACT</a></li>
+					</ul>
+					<p> 
+						© 2014-2015 Habchi Sarah and Benchikh Allaoua. All Rights Reserved.	
+					</p>
+				</div>
+				<div class="col-4 vCenter">
+					<a class="footer-img" href="#"></a>
+				</div>
+			</div>
+		</div>		
+	</footer>
+</body>
+</html>

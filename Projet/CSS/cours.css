@@ -1,0 +1,63 @@
+
+.sommaire {
+	margin: 24px auto ;
+	width: 620px ;
+}
+
+.sommaire li {
+	list-style: none ;
+}
+
+a.collapse-link {
+	font-family: "roboto" ;
+	font-weight: 400 ;
+	font-size: 14pt;
+	color: #475057 ;
+	text-decoration: none ;
+	display: block;
+	padding: 3px 12px ;
+	border-bottom: 1px solid #E0E0E0 ;
+
+	-webkit-transition: border-bottom 0.3s ;
+	-o-transition: border-bottom 0.3s ;
+	-moz-transition: border-bottom 0.3s  ;
+	transition: border-bottom 0.3s 
+}
+
+a.collapse-link:hover, a.collapse-link:focus{
+	border-bottom: 1px solid #0C82E9 ;
+}
+
+
+ul.sommaire-list > li.sommaire-item {
+	font-family: "roboto" ;
+	font-weight: 400 ;
+}
+
+ul.sommaire-list > li.sommaire-item > a {
+	text-decoration: none;
+	color: #888;
+}
+
+ul.sommaire-list > li.sommaire-item > a:hover {
+	color: #0C82E9;
+}
+
+.download-link {
+	font-family: "roboto" ;
+	font-size: 10pt ;
+	margin: 0px ;
+	padding: 6px ;
+	background-color: #F9F9F9 ;
+	color: #888;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.module-box > p {
+	font-family: "roboto" ;
+	font-size: 11pt ;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="font/font.css" type="text/css" charset="utf-8" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/grid.css" />
+	<link rel="stylesheet" type="text/css" href="css/boxes.css" />
+	<link rel="stylesheet" type="text/css" href="css/button.css" />
+	<link rel="stylesheet" type="text/css" href="css/chapitres.css" />
+	<link rel="stylesheet" type="text/css" href="css/navbar.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+
+	<title>Analyse combinatoire</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="navbar-brand">
+				
+			</div>
+			<ul class="nav-list">
+					<li class="nav-item selectable"><a href="index.html">Accueil</a></li>
+					<li class="nav-item selectable"><a href="news.html">News</a></li>
+					<li class="nav-item selectable selected"><a href="modules.html">Cours</a></li>
+					<li class="nav-item selectable"><a href="Telechargement.html">Téléchargement</a></li>
+					<li class="nav-item selectable"><a href="Inscription.html">Inscription</a></li>
+					<li class="nav-item selectable"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1 class="page-title">
+		Analyse combinatoire
+	</h1>
+	<div class="wrapper">
+		<div class="row">
+			<div class="col-12">
+				<article class="chapter-box box box-black">
+					<div class="box-header">
+						<a href="Cours-Analyse.html" class="nutton-left small blue pull-left">Sommaire</a>
+						<span class="update-date">Mis à jour le 07 décembre 2014</span>
+					</div>
+					<h2 class="box-title">Chapitre2 : Combinaisons.</h2>
+					<p>
+Définition <br/>
+Si l’on reprend l’exemple de la séquence d’ADN, à la différence des arrangements où les
+dinucléotides AC et CA formaient deux arrangements distincts, ces derniers ne formeront
+qu’une seule combinaison. Pour les combinaisons, on ne parle plus de suite ni de série
+puisque la notion d’ordre des objets n’est plus prise en compte. On parle alors de tirages
+avec ou sans remise. <br/>
+Combinaisons sans remise <br/>
+Etant donné un ensemble E de n objets, on appelle combinaisons de p objets tout ensemble
+de p objets pris parmi les n objets sans remise. <br/>
+Le nombre de combinaisons de p objets pris parmi n est noté : Cn
+p<br/>
+Remarque : On a nécessairement 1 ≤ p ≤ n et n,p ∈ N*
+Si n = p, alors Cn
+p = 0
+						
+					</p>
+					<p>
+						Exemples : <br/>
+(1) Le tirage au hasard de 5 cartes dans un jeu de 32 (main de poker) est une combinaison
+avec p=5 et n=32. <br/>
+(2) La formation d’une délégation de 5 personnes parmi un groupe de 50 constitue une
+combinaison avec p=5 et n=50. <br/>
+Pour ces deux exemples, les objets tirés sont clairement distincts. <br/>
+Le nombre de combinaisons de p objets pris parmi n et sans remise est : <br/>
+Cn
+p = n!
+p!(n − p)!
+notée
+n
+p
+ avec 1 ≤ p ≤ n <br/>
+Voici pourquoi : <br/>
+Pour calculer ce nombre, on utilise le principe de la division. <br/>
+• Il y a An
+p manières de tirer p objets parmi n en les ordonnant soit An
+p =
+n!
+(n − p)! <br/>
+• Une fois les p objets tirés, il y a p! manières de les ordonner.<br/>
+• Il y a donc
+An
+p
+p!
+manières de tirer p objets parmi n sans les ordonner.
+Cn
+p =
+An
+p
+p!
+=
+1
+p!
+n!
+(n − p)! <br/>
+Remarque : A la notation ancienne Cn
+p, on préfère parfois la notation moderne
+n
+p
+.<br/> Les
+nombres n et p constituent les coefficients binomiaux. <br/>
+Exemples : <br/>
+Dans le cadre de l’exemple de la séquence d’ADN, le nombre de dinucléotides attendus sans
+tenir compte de l’ordre des bases dans la séquence (hypothèse justifiée dans le cas de l’ADN
+non codant) est donc : <br/>
+C4
+2 =
+4
+2
+
+4!
+2!(4 − 2)!
+=
+4 × 3
+2 ×1
+= 6 dinucléotides <br/>
+
+</p>
+					
+					<div class="box-footer">
+						
+						<a href="chapitres-Probab-1-2.html" class="nutton-left small blue pull-left">Previous</a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-8 vCenter">
+					<ul class="footer-nav">
+						<li><a href="">ACCUEIL</a></li>
+						<li><a href="">NEWS</a></li>
+						<li><a href="">COURS</a></li>
+						<li><a href="">EXERCICES</a></li>
+						<li><a href="">TELECHARGEMENT</a></li>
+						<li><a href="">INSCRIPTION</a></li>
+						<li><a href="">CONTACT</a></li>
+					</ul>
+					<p> 
+						© 2014-2015 Habchi Sarah and Benchikh Allaoua. All Rights Reserved.	
+					</p>
+				</div>
+				<div class="col-4 vCenter">
+					<a class="footer-img" href="#"></a>
+				</div>
+			</div>
+		</div>		
+	</footer>
+</body>
+</html>

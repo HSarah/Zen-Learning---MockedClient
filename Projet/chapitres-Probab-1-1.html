@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="font/font.css" type="text/css" charset="utf-8" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/grid.css" />
+	<link rel="stylesheet" type="text/css" href="css/boxes.css" />
+	<link rel="stylesheet" type="text/css" href="css/button.css" />
+	<link rel="stylesheet" type="text/css" href="css/chapitres.css" />
+	<link rel="stylesheet" type="text/css" href="css/navbar.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+
+	<title>Analyse combinatoire</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="navbar-brand">
+				
+			</div>
+			<ul class="nav-list">
+					<li class="nav-item selectable"><a href="index.html">Accueil</a></li>
+					<li class="nav-item selectable"><a href="news.html">News</a></li>
+					<li class="nav-item selectable selected"><a href="modules.html">Cours</a></li>
+					<li class="nav-item selectable"><a href="Telechargement.html">Téléchargement</a></li>
+					<li class="nav-item selectable"><a href="Inscription.html">Inscription</a></li>
+					<li class="nav-item selectable"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1 class="page-title">
+		Analyse combinatoire
+	</h1>
+	<div class="wrapper">
+		<div class="row">
+			<div class="col-12">
+				<article class="chapter-box box box-black">
+					<div class="box-header">
+						<a href="Cours-Analyse.html" class="nutton-left small blue pull-left">Sommaire</a>
+						<span class="update-date">Mis à jour le 07 décembre 2014</span>
+					</div>
+					<h2 class="box-title">Chapitre1 : Arrangements.</h2>
+					<p>
+						Etant donné un ensemble E de n objets, on appelle arrangements de p objets toutes suites
+ordonnées de p objets pris parmi les n objets. <br/>
+Le nombre d’arrangements de p objets pris parmi n est noté
+						
+					</p>
+					<p>
+						Remarque : On a nécessairement 1 ≤ p ≤ n et n, p ∈ N*
+Si n = p, alors An
+p = 0 <br/>
+Deux arrangements de p objets sont donc distincts s’ils diffèrent par la nature des objets qui
+les composent ou par leur ordre dans la suite. <br/>
+Exemples : <br/>
+(1) Une séquence d’ADN est constituée d’un enchaînement de 4 nucléotides [A (Adénine), C
+(Cytosine), G (Guanine) et T (Thymine)]. Il existe différents arrangements possibles de
+deux nucléotides ou dinucléotides avec p=2 et n=4. <br/>
+(2) Le nombre de mots de 5 lettres (avec ou sans signification) formés avec les 26 lettres de
+l’alphabet correspond au nombre d’arrangements possibles avec p=5 et n=26. <br/>
+(3) Le tiercé dans l’ordre lors d’une course de 20 chevaux constitue un des arrangements
+possibles avec p=3 et n=20. <br/>
+Dans les exemples précédents, l’ordre des éléments dans la suite est essentiel. Ainsi pour le
+deuxième exemple, le mot NICHE est différent du mot CHIEN. <br/>
+Mais dans les deux premiers exemples, une base ou une lettre de l’alphabet peut se retrouver
+plusieurs fois alors que dans le troisième exemple, les trois chevaux à l’arrivée sont
+forcément différents. Il faut donc distinguer le nombre d’arrangements avec répétition et le
+nombre d’arrangements sans répétition (arrangements au sens strict).					</p>
+					<p>
+						Voici pourquoi :
+Pour le premier objet tiré, il existe n manières de ranger l’objet parmi n.
+Pour le second objet tiré, il existe également n possibilités d’arrangements car le premier
+objet fait de nouveau parti des n objets. On parle de tirage avec remise.
+Ainsi pour les p objets tirés, il y aura n x n x n x…..x n (p fois) arrangements possibles, soit
+An
+p = n × n × n × .... × n = n p					</p>
+					<div class="box-footer">
+						<a href="chapitres-Probab-1-2.html" class="nutton-right small blue pull-right">Next</a>
+						
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-8 vCenter">
+					<ul class="footer-nav">
+						<li><a href="">ACCUEIL</a></li>
+						<li><a href="">NEWS</a></li>
+						<li><a href="">COURS</a></li>
+						<li><a href="">EXERCICES</a></li>
+						<li><a href="">TELECHARGEMENT</a></li>
+						<li><a href="">INSCRIPTION</a></li>
+						<li><a href="">CONTACT</a></li>
+					</ul>
+					<p> 
+						© 2014-2015 Habchi Sarah and Benchikh Allaoua. All Rights Reserved.	
+					</p>
+				</div>
+				<div class="col-4 vCenter">
+					<a class="footer-img" href="#"></a>
+				</div>
+			</div>
+		</div>		
+	</footer>
+</body>
+</html>

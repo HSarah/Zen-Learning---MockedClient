@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="font/font.css" type="text/css" charset="utf-8" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/grid.css" />
+	<link rel="stylesheet" type="text/css" href="css/boxes.css" />
+	<link rel="stylesheet" type="text/css" href="css/button.css" />
+	<link rel="stylesheet" type="text/css" href="css/chapitres.css" />
+	<link rel="stylesheet" type="text/css" href="css/navbar.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+
+	<title>Adressage</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="navbar-brand">
+				
+			</div>
+			<ul class="nav-list">
+					<li class="nav-item selectable"><a href="index.html">Accueil</a></li>
+					<li class="nav-item selectable"><a href="news.html">News</a></li>
+					<li class="nav-item selectable selected"><a href="modules.html">Cours</a></li>
+					<li class="nav-item selectable"><a href="Telechargement.html">Téléchargement</a></li>
+					<li class="nav-item selectable"><a href="Inscription.html">Inscription</a></li>
+					<li class="nav-item selectable"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1 class="page-title">
+		Adressage
+	</h1>
+	<div class="wrapper">
+		<div class="row">
+			<div class="col-12">
+				<article class="chapter-box box box-black">
+					<div class="box-header">
+						<a href="Cours-Reseaux.html" class="nutton-left small blue pull-left">Sommaire</a>
+						<span class="update-date">Mis à jour le 07 décembre 2014</span>
+					</div>
+					<h2 class="box-title">Chapitre2 : Sous-reseaux</h2>
+					<p>
+						<h2>Pourquoi créer des sous-réseaux ? </h2>
+						Le principal problème de l'adressage IP est le gaspillage  de l'espace d'adressage  des adresses réservées mais non attribuées .
+Par exemple :<br/>
+Si on dispose de 50 machines dans un réseau  cela nécessite 50 adresses <br/>
+La classe la plus adéquate est la classe C ( par exemple 193.220.12.0 ) dont  on dispose de  254 hôtes  utiliser 50 adresses seulement . <br/>
+Mais le reste des adresses (204 adresses ) sont inutilisées et ne peuvent pas être affectées ailleurs puisque l’adresse réseau est déjà attribué.<br/><br/>
+
+Donc pourquoi ne pas utiliser les adresses d’un réseaux ayant une capacité qui répond  juste au besoin sans gaspiller les adresses  cela revient a prendre une partie ( sous réseaux) du réseaux global au lieu de prendre la totalité des adresses offertes par ce réseau .
+<br/><br/>
+Dans l’exemple on a besoin de 50 adresses pour 50 machines <br/>
+On divise le réseau globale ( 192.200.12.0)  en 4 sous-réseaux  chaque sous-réseaux comporte 64 adresses .<br/>
+On utilise l’un de  ces sous réseaux pour notre besoin et les autres peuvent être utilisés ailleurs .<br/><br/>
+
+
+Comment déterminer les sous réseaux ( comment déterminer 
+ l’adresse de chaque sous réseaux)<br/>
+Comment calculer le masque des sous réseaux<br/>
+Comment calculer l’intervalle des adresses valides de chaque sous réseaux.<br/>
+Comment calculer l’adresse du broadcast de chaque sous réseaux.<br/>
+
+
+
+</p>
+					<div class="box-footer">
+			
+						<a href="chapitres-Res-1-1.html" class="nutton-left small blue pull-left">Previous</a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-8 vCenter">
+					<ul class="footer-nav">
+						<li><a href="">ACCUEIL</a></li>
+						<li><a href="">NEWS</a></li>
+						<li><a href="">COURS</a></li>
+						<li><a href="">EXERCICES</a></li>
+						<li><a href="">TELECHARGEMENT</a></li>
+						<li><a href="">INSCRIPTION</a></li>
+						<li><a href="">CONTACT</a></li>
+					</ul>
+					<p> 
+						© 2014-2015 Habchi Sarah and Benchikh Allaoua. All Rights Reserved.	
+					</p>
+				</div>
+				<div class="col-4 vCenter">
+					<a class="footer-img" href="#"></a>
+				</div>
+			</div>
+		</div>		
+	</footer>
+</body>
+</html>

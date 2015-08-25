@@ -1,0 +1,153 @@
+
+.modules {
+	background-color: white;
+}
+
+.module-box {
+	position: relative;
+	height: 240px;
+	background-color: white ;
+	-webkit-transition: border 0.6s ease-in-out;
+	-o-transition: border 0.6s ease-in-out;
+	transition: border 0.6s ease-in-out;
+	padding: 0px;
+}
+
+.module-box:hover {
+	border: none;
+}
+
+.module-box > .module-titre{
+	font-family: "roboto light";
+	font-size: 13pt;
+	text-align: center ;
+	color: #0C82E9;
+	padding-top: 0px;
+	margin-top: 12px;
+	margin-bottom: 0px;
+}
+
+.module-box .module-img {
+	background-color: lightgray ;
+	background-position: center;
+	background-size: cover ;
+	background-repeat: no-repeat;
+
+	width: 218px ;
+	height: 160px ;
+}
+
+.module-box > .module-description{
+	position: absolute;
+	top: 0px ;
+	left: 0px ;
+	box-sizing: border-box ;
+	margin: 0px ;
+	padding: 12px ;
+	padding-bottom: 25% ;
+	width: 100% ;
+	height: 100% ;
+
+	opacity: 0 ;
+
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.module-description > p {
+	font-family: "roboto" ;
+	font-size: 10pt;
+	color: white ;
+	overflow: hidden;
+	text-align: justify;
+	height: 100% ;
+}
+
+.module-box:hover > .module-description {
+	opacity: 1;
+}
+
+.module-description > .button.voir {
+	position: absolute;
+	bottom: 6px ;
+	right: 6px;
+}
+
+h1{
+	font-family: "roboto light";
+	text-align: center ;
+	color: white ;
+}
+
+.module-background-img {
+	background-image: url(../img/banner-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover ;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.patterns-background {
+	padding: 24px 0px ;
+	background-image: url(../img/pattern.png);
+	background-repeat: repeat;
+
+}
+
+.module-background {
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 1000px ;
+	margin: auto ;
+}
+
+.module-box#module1 .module-img {
+	background-image: url(../img/modules/1.jpg);
+}
+
+.module-box#module2 .module-img {
+	background-image: url(../img/modules/2.jpg);
+}
+
+.module-box#module3 .module-img {
+	background-image: url(../img/modules/3.jpg);
+}
+
+.module-box#module4 .module-img {
+	background-image: url(../img/modules/4.jpg);
+}
+
+.module-box#module5 .module-img {
+	background-image: url(../img/modules/5.jpg);
+}
+
+.module-box#module6 .module-img {
+	background-image: url(../img/modules/6.jpg);
+}
+
+.module-box#module7 .module-img {
+	background-image: url(../img/modules/7.jpg);
+}
+
+.module-box#module8 .module-img {
+	background-image: url(../img/modules/8.jpg);
+}
+
+.cours > .wrapper > h2 {
+	font-family : "roboto light" ;
+	font-size: 16pt ;
+	color: #0C82E9 ;
+	text-align: center;
+}
+
+.cours-box {
+	display: inline-block;
+	box-sizing: border-box ;
+	width: 100% ;
+}
+
+.cours-box.box > .box-title {
+	border: none;
+	font-size: 14pt;
+}

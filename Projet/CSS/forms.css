@@ -1,0 +1,200 @@
+label {
+	/*display: block;*/
+	font-family: "roboto" ;
+	font-size: 11pt ;
+	font-weight: 600 ;
+	color: #475057 ;
+	display: block;
+	margin-left: 6px ;
+	margin-top: 12px ;
+}
+
+
+input:not([type="submit"]){
+	font-family: "roboto" ;
+	font-size: 12pt ;
+	padding: 12px 0px ;
+	padding-top: 6px ;
+	margin: 0px 12px ; 
+	border: none;
+	border-bottom: 1px solid lightgray ;
+
+	background-color: white;
+	position: relative;
+	width: 320px ;
+
+	box-shadow: none;
+
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+input:not([type="submit"]):focus {
+	border: none;
+	outline: 0 ;
+	border-bottom: 3px solid #0C82E9 ;
+}
+
+input.invalid {
+	outline: 0 ;
+	border-bottom: 3px solid #DD191D ;
+	box-shadow: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+
+fieldset.fieldset-inline {
+	display: inline-block;
+	vertical-align: top;
+}
+
+fieldset {
+	border: none ;
+	padding: 12px 24px  ;
+	margin: 12px auto ;
+}
+
+fieldset > legend {
+	display: block;
+	margin: auto ;
+	font-family: "roboto" ;
+	color: #0C82E9 ;
+}
+
+textarea {
+	font-family: "roboto" ;
+	font-size: 12pt ;
+	padding: 6px ;
+	margin: 0px 12px ; 
+	margin-top: 12px ;
+	border: 1px solid lightgray;
+	width: 320px ;
+
+	-webkit-transition: border-bottom 0.1s ease-in-out;
+	-o-transition: border-bottom 0.1s ease-in-out;
+	transition: border-bottom 0.1s ease-in-out;
+}
+
+textarea:focus {
+	border: 1px solid #0C82E9;
+	border-bottom: 3px solid #0C82E9 ;
+	outline: none;
+}
+
+textarea.invalid {
+	border: 1px solid #DD191D;
+	border-bottom: 3px solid #DD191D ;
+	outline: none;
+	box-shadow: none;
+}
+
+input[type=radio], input[type=checkbox] {  
+    display: none;  
+}
+
+.radio > label, .checkbox > label, label.radio {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 30px ;
+	margin-right: 12px ;
+}  
+
+.radio > label:before, .checkbox > label:before, label.radio:before {  
+    content: "";  
+    display: inline-block;  
+    box-sizing: border-box ;
+    width: 18px;  
+    height: 18px;  
+    background-color: white ; 
+  
+    margin-right: 10px;  
+    position: absolute;  
+    left: 0;  
+    bottom: 1px;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;    
+} 
+
+.radio > label:before, label.radio:before {
+	border : solid 1px #0C82E9;
+	border-radius: 50% ;
+}
+
+.checkbox > label:before {
+	border : solid 1px #0C82E9;
+}
+
+.radio > input[type=radio]:checked + label:before, input[type=radio]:checked + label:before {
+    background-color: #0C82E9 ; 
+	border : solid 3px lightgray;
+}
+
+.checkbox > input[type=checkbox]:checked + label:before {
+    background-color: #0C82E9 ; 
+	border : solid 3px lightgray;
+}
+
+select {
+	font-family: "roboto" ;
+	font-size: 12pt;
+	color: #757575;
+	width: 320px ;
+	padding: 6px ;
+	background-color: #f8f8f8 ;
+
+	padding: 6px 0px ;
+	margin: 0px 12px ;
+	margin-top: 6px ;
+
+    border: 1px solid lightgray;
+}
+
+select:focus {
+	outline: none;
+
+}
+
+input[type="file"] {
+	-web-kit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+input[type=submit]
+{
+	float: right;
+}
+.invisible{
+	visibility: hidden;
+}
+input#carte_bancaire:checked ~ .invisible{
+	visibility: visible ;
+}
+
+/** Le prix de la formation **/
+.PremierPrix , .DeuxiemePrix , .TroisiemePrix {
+	display : none ;
+}
+input#cours_normal:checked ~ .PremierPrix{
+	display: block ;
+}
+
+input#cours_accelere:checked ~ .DeuxiemePrix{
+	display: block ;
+}
+
+input#cours_soir:checked ~ .TroisiemePrix{
+	display: block ;
+	
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="font/font.css" type="text/css" charset="utf-8" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/grid.css" />
+	<link rel="stylesheet" type="text/css" href="css/boxes.css" />
+	<link rel="stylesheet" type="text/css" href="css/button.css" />
+	<link rel="stylesheet" type="text/css" href="css/chapitres.css" />
+	<link rel="stylesheet" type="text/css" href="css/navbar.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+
+	<title>Routage</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="navbar-brand">
+				
+			</div>
+			<ul class="nav-list">
+					<li class="nav-item selectable"><a href="index.html">Accueil</a></li>
+					<li class="nav-item selectable"><a href="news.html">News</a></li>
+					<li class="nav-item selectable selected"><a href="modules.html">Cours</a></li>
+					<li class="nav-item selectable"><a href="Telechargement.html">Téléchargement</a></li>
+					<li class="nav-item selectable"><a href="Inscription.html">Inscription</a></li>
+					<li class="nav-item selectable"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1 class="page-title">
+		Routage
+	</h1>
+	<div class="wrapper">
+		<div class="row">
+			<div class="col-12">
+				<article class="chapter-box box box-black">
+					<div class="box-header">
+						<a href="Cours-Reseaux.html" class="nutton-left small blue pull-left">Sommaire</a>
+						<span class="update-date">Mis à jour le 07 décembre 2014</span>
+					</div>
+					<h2 class="box-title">Chapitre1 : Routage statique</h2>
+					<p>
+						<h2>Réseau commuté </h2>
+						
+						Un réseau commuté supporte uniquement l’adressage du niveau 2 ( adresse MAC )<br/>
+Les commutateurs utilisent des tables de correspondance Port/@MAC pour localiser les machines.<br/>
+Les commutateurs ne possèdent pas assez d’espace pour contenir des table assez importante , en plus pas de très grande capacité de calcul<br/>
+Si le nombre de machines augmente  les performances du réseau déminent<br/>
+Donc il faut utiliser des équipements qui :<br/>
+ supportent l’adressage logique , 
+ permet de limiter les domaine du broadcast <br/>
+ et qui permet localiser les machines d’une façon efficace
+L’équipement qui offre ces fonctionnalités s’appelle un routeur ( c’est u équipement de la couche 3 ) .<br/>
+
+
+<h2>Les routeurs </h2>
+
+Un routeur est un équipement  qui possède plusieurs interfaces réseaux .<br/>
+Chaque interface est connecté à un réseaux .<br/>
+Il possède la capacité de router ( acheminer )  les paquets d’un réseau à un autres <br/>
+Un réseau qui comporte des routeurs ( ou des passerelles ) est appelé réseaux routé . Un réseau routé permet de limiter le domaine du broadcast .<br/>
+
+
+<h2>Le routage </h2>
+
+Le routage  (routage du paquet  )est le processus permettant à  un datagramme d’être acheminé vers le destinataire lorsque celui-ci n’est pas sur le même réseau physique que l’émetteur.<br/> 
+La sélection du chemin est le processus que le routeur utilise pour choisir le prochain saut ( prochain routeur ) du trajet que le paquet empruntera vers sa destination. <br/>
+Les routeurs coopèrent entre eux de telle manière qu’un datagramme passe d’un routeur à un autre jusqu’à ce que l’une d’entre elles le délivre à son destinataire.<br/>
+Le routeur ne connaît pas le chemin complet pour atteindre la destination.<br/>
+Un routeur a juste une vision local du réseau global . <br/>
+
+
+
+</p>
+					<div class="box-footer">
+						
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-8 vCenter">
+					<ul class="footer-nav">
+						<li><a href="">ACCUEIL</a></li>
+						<li><a href="">NEWS</a></li>
+						<li><a href="">COURS</a></li>
+						<li><a href="">EXERCICES</a></li>
+						<li><a href="">TELECHARGEMENT</a></li>
+						<li><a href="">INSCRIPTION</a></li>
+						<li><a href="">CONTACT</a></li>
+					</ul>
+					<p> 
+						© 2014-2015 Habchi Sarah and Benchikh Allaoua. All Rights Reserved.	
+					</p>
+				</div>
+				<div class="col-4 vCenter">
+					<a class="footer-img" href="#"></a>
+				</div>
+			</div>
+		</div>		
+	</footer>
+</body>
+</html>

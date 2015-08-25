@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="font/font.css" type="text/css" charset="utf-8" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/grid.css" />
+	<link rel="stylesheet" type="text/css" href="css/boxes.css" />
+	<link rel="stylesheet" type="text/css" href="css/button.css" />
+	<link rel="stylesheet" type="text/css" href="css/chapitres.css" />
+	<link rel="stylesheet" type="text/css" href="css/navbar.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+
+	<title>Adressage</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="navbar-brand">
+				
+			</div>
+			<ul class="nav-list">
+					<li class="nav-item selectable"><a href="index.html">Accueil</a></li>
+					<li class="nav-item selectable"><a href="news.html">News</a></li>
+					<li class="nav-item selectable selected"><a href="modules.html">Cours</a></li>
+					<li class="nav-item selectable"><a href="Telechargement.html">Téléchargement</a></li>
+					<li class="nav-item selectable"><a href="Inscription.html">Inscription</a></li>
+					<li class="nav-item selectable"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1 class="page-title">
+		Adressage
+	</h1>
+	<div class="wrapper">
+		<div class="row">
+			<div class="col-12">
+				<article class="chapter-box box box-black">
+					<div class="box-header">
+						<a href="Cours-Reseaux.html" class="nutton-left small blue pull-left">Sommaire</a>
+						<span class="update-date">Mis à jour le 07 décembre 2014</span>
+					</div>
+					<h2 class="box-title">Chapitre1 : IPv4</h2>
+					<p>
+						les données circulent vers le bas du modèle OSI, elles sont encapsulées au niveau de chaque couche. <br/>
+
+Au niveau de la couche réseau, les données sont encapsulées dans des paquets  (aussi appelés datagrammes).<br/><br/>
+
+
+L’objectif de la couche réseau est de  fournir un  service de communication  qui permet à  une machine de communiquer avec  les autres .<br/>
+La couche réseau offre deux fonctionnalités de base : <br/>
+L’adressage ( Identification des machines ) : chaque machine doit être doté d’une adresse logique unique dans un réseau.<br/>
+Le routage : la couche réseau permet de retrouver une machine dans un réseau grâce à une route précisant comment  la machine peut être atteinte<br/><br/>
+
+<h2>Principe de l'adressage</h2>
+
+Chaque hôte dispose d’une adresse  unique.<br/>
+L’adresse  est une adresse logique et non physique ( différente de l’adresse physique et peut être modifiée ).<br/>
+L’adresse est assignée à l’interface et non à la machine.<br/>
+Les adresses sont groupées par rapport au numéro du réseau ( adresse réseau )<br/>
+Les interfaces d’un même groupe doivent être connectés au même média ( bus , switch , hub ) .<br/><br/>
+
+Une adresse  est sur  32 bits  ( 4 octets ) dite " adresse IP " <br/>
+Chaque combinaison ( 232  combinaisons) représente une adresse .<br/><br/>
+
+Il est pratiquement impossible de mémoriser 32 bits.<br/>
+Une adresse IP est représentée  dans un format décimal avec  4 nombres séparés par des points.  <br/>
+On parle de "notation décimale pointée".
+<br/><br/>
+Chaque 8 bits de l’adresse représente un nombre décimal<br/>
+ Ce nombre décimal représente une valeur  entre  0 à 255.<br/><br/>
+
+ Exemple 2 : <br/>
+L’adresse   1 0 0 0 0 0 1 1. 0 1 1 0 1 1 0 0 .0 1 1 1 1 0 1 0. 1 1 0 0 1 1 0 1<br/>
+Est représentée par :  131 . 108 . 122 . 205<br/>
+L’adresse : 131 . 108 . 122 . 264 est non valide puisque le dernier  <br/>
+nombre est supérieur a 255 <br/>
+
+
+</p>
+					<div class="box-footer">
+						<a href="chapitres-Res-1-2.html" class="nutton-right small blue pull-right">Next</a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-8 vCenter">
+					<ul class="footer-nav">
+						<li><a href="">ACCUEIL</a></li>
+						<li><a href="">NEWS</a></li>
+						<li><a href="">COURS</a></li>
+						<li><a href="">EXERCICES</a></li>
+						<li><a href="">TELECHARGEMENT</a></li>
+						<li><a href="">INSCRIPTION</a></li>
+						<li><a href="">CONTACT</a></li>
+					</ul>
+					<p> 
+						© 2014-2015 Habchi Sarah and Benchikh Allaoua. All Rights Reserved.	
+					</p>
+				</div>
+				<div class="col-4 vCenter">
+					<a class="footer-img" href="#"></a>
+				</div>
+			</div>
+		</div>		
+	</footer>
+</body>
+</html>

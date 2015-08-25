@@ -1,0 +1,89 @@
+
+.page-title  {
+	background-color: #0C82E9 ;
+	padding: 24px 60px ;
+	margin: 0px ;
+
+	font-family: 'roboto thin' ;
+	font-weight: 300 ;
+	font-size: 48pt ;
+	color: white ;
+}
+
+.page-background{
+	background-color: #e9e9e9 ;
+}
+
+.box {
+	background-color: white ;
+	padding: 12px 24px ;
+	margin: 12px 0px ;
+	border: solid 1px #d5d5d5 ;
+	display: block;
+}
+
+.box-header, .box-footer {
+	display: inline-block;
+	width: 100% ;
+}
+
+.box-header > .update-date {
+	font-family: 'roboto' ;
+	font-size: 8pt ;
+	font-style: italic;
+	color: #888 ;
+	float: right;
+}
+
+.box-header {
+	border-bottom: 1px solid #E0E0E0 ;
+	padding-bottom: 6px ;
+	margin-bottom: 12px ;
+}
+
+.box-footer {
+	border-top: 1px solid #E0E0E0 ;
+	padding-top: 12px ;
+	margin-top: 6px ;
+}
+
+.box .box-title {
+	font-family: "roboto light" ;
+	font-size: 16pt ;
+	font-weight: 300 ;
+	padding-bottom: 18px ;
+	margin: 6px auto ;
+	padding: 6px 0px ;
+	border-bottom: solid 1px ;
+	clear: both;
+}
+
+.box.box-blue {
+	border-bottom: solid 2px #0C82E9 ;
+}
+
+.box.box-blue .box-title {
+	border-color: #0C82E9;
+	color: #0C82E9 ;
+}
+
+.box.box-black {
+	border-bottom: solid 2px #475057 ;
+}
+
+.box.box-black .box-title  {
+	border-color: #475057 ;
+	color: #475057 ;
+}
+
+.pull-right {
+	float: right ;
+}
+
+.pull-left {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}

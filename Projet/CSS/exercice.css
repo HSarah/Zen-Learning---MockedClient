@@ -1,0 +1,14 @@
+body {
+	background-color: #e9e9e9 ;
+}
+
+.exercice-box p {
+	font-family: "roboto" ;
+	font-size: 11pt ;
+	padding: 12px ;
+	text-align: justify;
+}
+
+.exercice-box p img {
+	margin: 12px ;
+}

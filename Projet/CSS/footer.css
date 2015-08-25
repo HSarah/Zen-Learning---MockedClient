@@ -1,0 +1,65 @@
+.footer {
+	background-color: #0C82E9 ;
+	height: 114px ;
+	padding-top: 24px ;
+}
+
+.footer ul.footer-nav {
+	padding-left: 0px ;
+}
+
+.footer ul.footer-nav > li {
+	display: inline-block;
+	padding: 5px ;
+}
+
+.footer ul.footer-nav > li > a, .footer ul.footer-nav > li > a:visited, .footer p {
+	font-family: 'roboto' ;
+	font-size: 10pt ;
+	text-decoration: none;
+	color: #9ecffa ;
+}
+
+.footer ul.footer-nav > li > a:hover {
+	color: white ;
+}
+
+.footer a.footer-img {
+	position: relative;
+	display: inline-block;
+	float: right;
+	width: 85px ;
+	height: 64px ;
+	background : url(../img/logo-esi.png) no-repeat 0 0px;
+}
+
+.footer a.footer-img::after {
+	content: "" ;
+	position: absolute;
+	width: 100% ;
+	height: 100% ;
+	top: 0 ;
+	left: 0 ;
+
+	background-image: url(../img/logo-esi-hover.png);
+	background-repeat: no-repeat;
+	background-size: contain ;
+	background-position: center;
+	opacity: 0 ;
+	-webkit-transition: opacity  0.3s;
+	-o-transition: opacity  0.3s;
+	transition: opacity  0.3s;
+}
+
+.footer a.footer-img:hover::after {
+	opacity: 1;
+}
+
+/* NOTE : Move this class to grid.css */
+.vCenter {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="font/font.css" type="text/css" charset="utf-8" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/grid.css" />
+	<link rel="stylesheet" type="text/css" href="css/boxes.css" />
+	<link rel="stylesheet" type="text/css" href="css/button.css" />
+	<link rel="stylesheet" type="text/css" href="css/chapitres.css" />
+	<link rel="stylesheet" type="text/css" href="css/navbar.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+
+	<title>CSS</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="navbar-brand">
+				
+			</div>
+			<ul class="nav-list">
+					<li class="nav-item selectable"><a href="index.html">Accueil</a></li>
+					<li class="nav-item selectable"><a href="news.html">News</a></li>
+					<li class="nav-item selectable selected"><a href="modules.html">Cours</a></li>
+					<li class="nav-item selectable"><a href="Telechargement.html">Téléchargement</a></li>
+					<li class="nav-item selectable"><a href="Inscription.html">Inscription</a></li>
+					<li class="nav-item selectable"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1 class="page-title">
+		CSS
+	</h1>
+	<div class="wrapper">
+		<div class="row">
+			<div class="col-12">
+				<article class="chapter-box box box-black">
+					<div class="box-header">
+						<a href="cours.html" class="nutton-left small blue pull-left">Sommaire</a>
+						<span class="update-date">Mis à jour le 07 décembre 2014</span>
+					</div>
+					<h2 class="box-title">Chapitre2 : Selecteurs</h2>
+					<p> <br/>
+						+ Le sélecteur indique à quels éléments appliquer le style<br/>
++ Une déclaration peut s’appliquer à plusieurs sélecteurs s’ils sont
+séparés par des virgules<br/>
++ Les déclarations indiquent les styles à appliquer aux éléments
+appartenant au sélecteur<br/>
+<br/>
+
++ Les sélecteurs permettent de sélectionner des éléments ayant un
+critère particulier : par exemple tous les éléments, appartenant à la
+même balise, même classe,…<br/>
++ Les sélecteurs CSS sont sensibles à la casse<br/>
++ Voir démonstrations dans selctors,html et advancedselectors.html<br/>
+
+<br/>
++ Si plusieurs règles s’appliquent un élément, les mécanismes suivants
+sont appliqués (voir cascade.html)<br/>
++ Si deux règles sont identiques, la dernière est prise<br/>
++ Si une règle est plus spécifique que l’autre, elle est prise sur l’autre.
+h1 est spécifique sur *. span#id est spcifique à span. Span,maClasse
+est spécifique à .maClasse.<br/>
++ Si on veut prioriser une règle, on la marque avec le mot clé
+« !important »<br/>
+
+<br/>
+
+
+</p>
+					<div class="box-footer">
+						<a href="chapitres-WEB-2-3.html" class="nutton-right small blue pull-right">Next</a>
+						<a href="chapitres-WEB-2-1.html" class="nutton-left small blue pull-left">Previous</a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-8 vCenter">
+					<ul class="footer-nav">
+						<li><a href="">ACCUEIL</a></li>
+						<li><a href="">NEWS</a></li>
+						<li><a href="">COURS</a></li>
+						<li><a href="">EXERCICES</a></li>
+						<li><a href="">TELECHARGEMENT</a></li>
+						<li><a href="">INSCRIPTION</a></li>
+						<li><a href="">CONTACT</a></li>
+					</ul>
+					<p> 
+						© 2014-2015 Habchi Sarah and Benchikh Allaoua. All Rights Reserved.	
+					</p>
+				</div>
+				<div class="col-4 vCenter">
+					<a class="footer-img" href="#"></a>
+				</div>
+			</div>
+		</div>		
+	</footer>
+</body>
+</html>

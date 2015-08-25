@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Inscription2</title>
+		<meta name="description" content="">
+		<meta name="author" content="sarah">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="CSS/button.css" />
+		<link rel="stylesheet" href="CSS/grid.css" />
+		<link rel="stylesheet" href="CSS/footer.css" />
+		<link rel="stylesheet" href="CSS/boxes.css" />
+		<link rel="stylesheet" href="CSS/forms.css" />
+		<link rel="stylesheet" href="CSS/navbar.css" />
+		<link rel="stylesheet" href="CSS/cours.css" />
+
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar">
+				<div class="navbar-brand">
+
+				</div>
+				<ul class="nav-list">
+					<li class="nav-item selectable"><a href="index.html">Accueil</a></li>
+					<li class="nav-item selectable"><a href="news.html">News</a></li>
+					<li class="nav-item selectable"><a href="modules.html">Cours</a></li>
+					<li class="nav-item selectable"><a href="Telechargement.html">Téléchargement</a></li>
+					<li class="nav-item selectable selected"><a href="Inscription.html">Inscription</a></li>
+					<li class="nav-item selectable"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<h1 class="page-title"> Inscription </h1>
+		<section class="page-background">
+			<div class="wrapper">
+
+				<div class="formulaire">
+
+					<form class="inscription">
+						<fieldset class="box box-blue">
+							<h2 class="box-title">Cours</h2>
+							<label for="select_modules"> Par quels modules êtes vous intéressés?</label>
+							<select name="select_modules" id="select_modules" required>
+								<option name="choix_Analyse">Analyse</option>
+								<option name="choix_Physique">Physique</option>
+								<option name="choix_Algorithmique">Algorithmique</option>
+								<option name="choix_Reseaux">Reseaux</option>
+								<option name="choix_Web">WEB</option>
+								<option name="choix_IGL">IGL</option>
+								
+							</select>
+							<label for="type_cours">Type de cours</label>
+							
+								<input type="radio" class="radio" name="type_cours" value ="cours_normal" id="cours_normal" required>
+								<label class="radio" for="cours_normal">Normal</label>
+								<br />
+								<input class="radio" type="radio" name="type_cours" value ="cours_accelere" id="cours_accelere" required>
+								<label class="radio" for="cours_accelere">Cours accélérés</label>
+								<br />
+								<input class="radio" type="radio" name="type_cours" value ="cours_soir" id="cours_soir" required>
+								<label class="radio" for="cours_soir">Cours de soir</label>
+								<br />
+								<br />
+								<label class="PremierPrix">Le prix de votre formation est de : 5000DA/mois</label>
+								<label class="DeuxiemePrix">Le prix de votre formation est de : 7000DA/mois</label>
+								<label class="TroisiemePrix">Le prix de votre formation est de : 8000DA/mois</label>
+							
+						</fieldset>
+						<fieldset class="box box-blue">
+							<h2 class="box-title">Informations personnelles</h2>
+							<br />
+							<label for="nom"> Nom </label>
+
+							<input type="text" pattern="[A-Za-z\s]+" name="nom" id="nom" placeholder="NOM" required/>
+							<br />
+							<label for="prenom"> Prenom </label>
+
+							<input type="text" pattern="[A-Za-z\s]+" name="prenom" id="prenom" placeholder="PRENOM" required=""/>
+							<br />
+							<label for="date"> Date </label>
+
+							<input type="date" name="date" id="date" required/>
+							<br />
+							<label for="adresse"> Adresse </label>
+
+							<input pattern="[A-Za-z0-9\s]+" type="text" name="adresse" id="adresse" placeholder="15 Cite XX Ville YY" required/>
+							<br />
+							<label for="mail"> Mail </label>
+							<input type="email" name="mail" id="mail" placeholder="yourmail@mail.com" required/>
+							<br />
+							<label for="telephone"> Telephone </label>
+							<input type="tel" name="telephone" id="telephone" placeholder="+213 XX XX XX XX " required/>
+							<br />
+							<label for="situation_familiale"> Situation familiale</label>
+							<br />
+							<div class="radio">
+								<input type="radio" name="situation_familiale" value="celib" id="celib" required>
+								<label for="celib">Célibataire</label>
+								<br />
+								<input type="radio" name="situation_familiale" value="marrie" id="marrie" required>
+								<label for="marrie">Marrié(e)</label>
+								<br />
+								<input type="radio" name="situation_familiale" value="veuf" id="veuf" required>
+								<label for="veuf">Veuf(ve)</label>
+								<br />
+							</div>
+							<label for="id_national"> Identifiant national </label>
+							<input type="number" pattern="[0-9]+" id="id_national" name="id_national" required/>
+							<br />
+
+						</fieldset>
+						<br />
+						<fieldset class="box box-blue">
+							<h2 class="box-title">Paiement</h2>
+							<label for="type_paiement">Type de paiement </label>
+							
+							<input type="radio" class="radio" name="type_paiement" value="virement" id="virement" />
+							<label class="radio" for="virement">Virement</label>
+							<br />
+							<input type="radio" class="radio" name="type_paiement" value="carte_bancaire" id="carte_bancaire" />
+							<label class="radio" for="carte_bancaire">Carte bancaire</label>
+							
+
+							<div class="invisible">
+								<label for="type_carte"> Type de carte </label>
+								<select required>
+									<option>CIB</option>
+									<option>VISA</option>
+									<option>MasterCard</option>
+								</select>
+							</div>
+						</fieldset>
+						<br />
+						<input type="submit" value="Inscrire" class="button medium white"/>
+
+					</form>
+
+				</div>
+
+			</div>
+			<footer class="footer">
+				<div class="wrapper">
+					<div class="row">
+						<div class="col-8 vCenter">
+							<ul class="footer-nav">
+								<li>
+									<a href="">ACCUEIL</a>
+								</li>
+								<li>
+									<a href="">NEWS</a>
+								</li>
+								<li>
+									<a href="">COURS</a>
+								</li>
+								<li>
+									<a href="">EXERCICES</a>
+								</li>
+								<li>
+									<a href="">TELECHARGEMENT</a>
+								</li>
+								<li>
+									<a href="">INSCRIPTION</a>
+								</li>
+								<li>
+									<a href="">CONTACT</a>
+								</li>
+							</ul>
+							<p>
+								© 2014-2015 Habchi Sarah and Benchikh Allaoua. All Rights Reserved.
+							</p>
+						</div>
+						<div class="col-4 vCenter">
+							<a class="footer-img" href="#"></a>
+						</div>
+					</div>
+				</div>
+
+			</footer>
+		</section>
+
+	</body>
+</html>
